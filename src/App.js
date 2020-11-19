@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="camera__wrap">
+        <div className="camera__body">
+          <div className="camera__body-k7">
+            <div className="tape">
+              <div className="roll"></div>
+              <div className="roll"></div>
+              <div className="roll"></div>
+              <div className="roll"></div>
+              <div className="center"></div>
+            </div>
+            <div className="tape">
+              <div className="roll"></div>
+              <div className="roll"></div>
+              <div className="roll"></div>
+              <div className="roll"></div>
+              <div className="center"></div>
+            </div>
+          </div>
+          <div className="camera__body__stuff">
+            <div className="camera__body__stuff-bat"></div>
+            <div className="camera__body__stuff-pointer first"></div>
+            <div className="camera__body__stuff-pointer"></div>
+          </div>
+        </div>
+        <div className="camera__body-optic"></div>
+        <div className="camera__body-light"></div>
+      </div>
     </div>
   );
 }
